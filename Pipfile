@@ -5,9 +5,13 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [packages]
 pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.8"
