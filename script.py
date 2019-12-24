@@ -40,10 +40,8 @@ class Perceptron(object):
 
         ActivationOutput = self.Activation(sum)
         return ActivationOutput
-    #########################################
 
     # fiting weights values
-
     def fit(self, X, actualOutput):
         # for loop number of Epoches
         for epoch in range(self.epochs):
@@ -55,10 +53,6 @@ class Perceptron(object):
                 # error calculation
                 err = actualOutput[i] - predicted
                 self.W = self.W + self.lr * err * np.insert(X[i], 0, 1)
-    #########################################
-
-
-###################################################End OF Class###################################################
 
 # Creating object
 perceptron = Perceptron(numberOfRows=4)
